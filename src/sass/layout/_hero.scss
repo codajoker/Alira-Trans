@@ -189,18 +189,12 @@
 .swiper-slide-first {
   width: 100%;
   height: 100%;
-  @include min-width('small') {
-    background-image: linear-gradient(90deg, rgba(0, 24, 53, 0.6) 0%, rgba(0, 29, 64, 0) 100%),
-      url('../images/tablet/hero_bg1.jpg');
-    @include retina(
-      linear-gradient(90deg, rgba(0, 24, 53, 0.6) 0%, rgba(0, 29, 64, 0) 100%),
-      '../images/tablet/hero_bg1@2x.jpg',
-      'small'
-    );
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
+  background-image: linear-gradient(90deg, rgba(0, 24, 53, 0.6) 0%, rgba(0, 29, 64, 0) 100%),
+    url('../images/tablet/hero_bg1@2x.jpg');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   @include min-width('medium') {
     background-image: linear-gradient(90deg, rgba(0, 24, 53, 0.6) 0%, rgba(0, 29, 64, 0) 100%),
       url('../images/deckstope/hero_bg1.jpg');
