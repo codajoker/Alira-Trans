@@ -1,0 +1,125 @@
+.modal {
+  position: absolute;
+  padding: 37px 6px 38px 6px;
+
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%) scale(1);
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+
+  @include min-width('small') {
+    width: 90vw;
+  }
+  @include min-width('medium') {
+    width: 500px;
+  }
+  @include min-width('large') {
+    width: 500px;
+  }
+  &__close-btn {
+    position: absolute;
+    cursor: pointer;
+    top: -8px;
+    right: -8px;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    background: linear-gradient(0deg, #ffffff, #ffffff);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+  }
+  &__title {
+    margin-bottom: 15px;
+    text-align: center;
+
+    color: #303030;
+    @include min-width('small') {
+      @include font(20px, 600, 35px);
+    }
+    @include min-width('medium') {
+      @include font(24px, 600, 35px);
+    }
+    @include min-width('large') {
+      @include font(28px, 600, 35px);
+    }
+  }
+  &__descriptions {
+    margin-bottom: 30px;
+    text-align: center;
+
+    color: #303030;
+
+    @include min-width('small') {
+      @include font(16px, 400, 23px);
+    }
+    @include min-width('medium') {
+      @include font(16px, 400, 23px);
+    }
+    @include min-width('large') {
+      @include font(16px, 400, 23px);
+    }
+  }
+}
+.modal-form {
+  &__fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border: 0;
+  }
+  &__field {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    box-sizing: border-box;
+
+    $border: 1px;
+    color: #fff;
+    background: #fff;
+    background-clip: padding-box; /* !importanté */
+    border: solid $border transparent; /* !importanté */
+    border-radius: 5px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      margin: -$border; /* !importanté */
+      border-radius: inherit; /* !importanté */
+      background: linear-gradient(92.86deg, #076a89 0%, #48b5d8 100%);
+    }
+    & + & {
+      margin-top: 18px;
+    }
+  }
+  &__input {
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+  }
+  &__btn {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+
+    padding-bottom: 6px;
+    padding-left: 37px;
+    padding-right: 38px;
+    text-align: center;
+
+    color: #ffffff;
+    @include font(18px, 600, 35px);
+  }
+}

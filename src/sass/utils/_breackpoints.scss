@@ -1,0 +1,11 @@
+$min-widths: (
+  'small': 320px,
+  'medium': 640px,
+  'large': 1400px,
+) !default;
+
+$max-widths: (
+  'small': 319px,
+  'medium': 639px,
+  'large': 1399px,
+) !default;

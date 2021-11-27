@@ -1,0 +1,92 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+button,
+input,
+textarea {
+  border: none;
+}
+
+button:active,
+button:focus,
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+  outline: none;
+}
+
+// List
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+// Link
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: $text-descr;
+  background-color: $primary-white-color;
+  position: relative;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+select,
+textarea {
+  font-family: Montserrat;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+// Address
+address {
+  font-style: normal;
+}
+
+// Button
+button {
+  padding: 0;
+  background-color: transparent;
+}

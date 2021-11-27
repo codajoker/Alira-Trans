@@ -1,0 +1,52 @@
+// BASE and COMPONENTS//
+@import './utils/fonts';
+@import './utils/variables';
+@import './base/base';
+@import './utils/breackpoints';
+@import './utils/mixins';
+@import './components/container';
+@import './components/order-btn';
+@import './components/title';
+@import './utils/visually-hidden';
+@import './components/offers-slide';
+
+//HEADER + BURGER-MENU//
+@import './layout/header';
+@import './layout/mobile-menu';
+//HERO//
+@import './layout/hero';
+//OFFERS//
+@import './layout/offers';
+//DESCRIPTIONS//
+@import './layout/descriptions';
+//BENEFITS//
+@import './layout/benefits';
+//MAP//
+@import './layout/mapUkraine';
+//PARTNERS//
+@import './layout/partners';
+//FOOTER//
+@import './layout/footer';
+//BACKDROP
+@import './components/backdrop';
+//MODDAL//
+@import './layout/modal';
+
+// body {
+//   background-color: tomato;
+// }
+// div {
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding: 0;
+//   max-width: 1600px;
+//   height: 600px;
+//   background-image: linear-gradient(to right, rgba(0, 24, 53, 0.8), rgba(0, 29, 64, 0)),
+//     linear-gradient(to right, rgba(0, 24, 53, 0.8), rgba(0, 29, 64, 0)),
+//     url(../images/deckstope/hero_bg2@2x.jpg);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   background-color: #c4c4c4;
+//   text-align: center;
+// }

@@ -1,0 +1,39 @@
+<div class="modal is-hidden" data-modal>
+  <button class="modal__close-btn" data-modal-close>
+    <svg class="modal__close-img" width="15" height="15">
+      <use href="./images/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h4 class="modal__title">Залиште свої контакти</h4>
+  <p class="modal__descriptions">
+    З вами зв'яжеться наш менеджер і розповість детальніше про умови отримання пропозиції
+  </p>
+  <form
+    class="modal-form"
+    id="fs-frm"
+    name="simple-contact-form"
+    accept-charset="utf-8"
+    action="https://formspree.io/f/mpzbaqqd"
+    method="post"
+  >
+    <fieldset class="modal-form__fieldset" id="fs-frm-inputs">
+      <label class="modal-form__field"
+        ><input
+          type="text"
+          placeholder="Ваше ім'я"
+          name="name"
+          class="modal-form__input"
+          required=""
+      /></label>
+      <label class="modal-form__field"
+        ><input
+          type="tel"
+          placeholder="Ваше номер телефону"
+          class="modal-form__input"
+          name="telephone"
+          required=""
+      /></label>
+    </fieldset>
+    <button class="order-btn modal-form__btn" type="submit">Замовити дзвінок</button>
+  </form>
+</div>

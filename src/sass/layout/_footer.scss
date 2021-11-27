@@ -1,0 +1,98 @@
+.footer {
+  padding-top: 47px;
+  padding-bottom: 45px;
+  background-color: #0c1523;
+  &__container {
+    @include min-width('large') {
+      display: flex;
+    }
+  }
+  &__title {
+    margin-bottom: 26px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: rgba(255, 255, 255, 0.5);
+  }
+  &__item {
+    & + & {
+      margin-top: 13px;
+    }
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    color: #ffffff;
+  }
+  &__segment--left {
+    margin-bottom: 84px;
+  }
+  &__segment--center {
+    margin-bottom: 46px;
+    @include min-width('large') {
+      margin-left: 365px;
+      margin-right: 134px;
+    }
+  }
+  &__logo {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 26px;
+    &-title {
+      font-weight: 600;
+      font-size: 21.39px;
+      line-height: 1.09;
+      /* identical to box height, or 109% */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+  }
+  &__logo-img {
+    width: 46px;
+    height: 27px;
+  }
+  &__contact-gps {
+    width: 16px;
+    height: 22.5px;
+  }
+  &__contact-mail {
+    width: 16px;
+    height: 13px;
+  }
+  &__contact-phone {
+    width: 16px;
+    height: 16px;
+  }
+  &__social-list {
+    display: flex;
+  }
+  &__social-facebook {
+    fill: #ffff;
+    fill-opacity: 0.5;
+    width: 32px;
+    height: 32px;
+  }
+  &__social-instagram {
+    fill: #ffff;
+    fill-opacity: 0.5;
+    width: 32px;
+    height: 32px;
+  }
+  &__contact-item {
+    display: flex;
+    align-items: center;
+  }
+  &__contact-link {
+    margin-left: 11px;
+  }
+}
+.social-list__item + .social-list__item {
+  margin-left: 15px;
+}
