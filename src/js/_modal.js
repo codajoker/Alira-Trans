@@ -16,7 +16,7 @@ function openModal() {
   refs.modal.classList.remove('is-hidden');
 }
 
-function closeModal() {
+function closeModal(e) {
   document.body.classList.remove('bg-scrolling-element-when-mobile-open');
   refs.backdrop.classList.add('is-hidden');
   refs.modal.classList.add('is-hidden');

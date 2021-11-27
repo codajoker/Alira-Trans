@@ -52,3 +52,18 @@ $(document).ready(function () {
     ],
   });
 });
+$(document).ready(function () {
+  $('.wrapper-offers-img').slick({
+    adaptiveHeight: true,
+
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 1000,
+    fade: true,
+
+    cssEase: 'linear',
+  });
+});
