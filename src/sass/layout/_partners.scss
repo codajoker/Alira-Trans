@@ -25,3 +25,14 @@
 .slick-next:before {
   color: black;
 }
+.slick-list.draggable {
+  @include min-width('small') {
+    min-height: 38px !important;
+  }
+  @include min-width('medium') {
+    min-height: 54px !important;
+  }
+  @include min-width('large') {
+    min-height: 58px !important;
+  }
+}
