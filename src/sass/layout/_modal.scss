@@ -1,7 +1,7 @@
 .modal {
   position: absolute;
   padding: 37px 6px 38px 6px;
-
+  z-index: 5;
   top: 50vh;
   left: 50vw;
   transform: translate(-50%, -50%) scale(1);

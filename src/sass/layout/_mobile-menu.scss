@@ -8,7 +8,7 @@
   justify-content: space-between;
   width: 220px;
   height: 100vh;
-  padding: 66px 19px 34px 25px;
+  padding: 66px 19px 55px 25px;
   background-color: $primary-white-color;
   overflow: auto;
   pointer-events: none;
@@ -16,13 +16,24 @@
   transition: all $main-duration $timing-function;
   @include min-width('medium') {
     width: 283px;
-    padding: 85px 30px 45px 33px;
+    padding: 85px 30px 55px 33px;
   }
+}
+
+.bg-scrolling-element-when-mobile-open {
+  /* when modal active */
+  touch-action: none;
+  -webkit-overflow-scrolling: none;
+  overflow: hidden;
+  /* Other browsers */
+  overscroll-behavior: none;
 }
 
 .mobile-open {
   transform: translateX(0);
   pointer-events: auto;
+  overscroll-behavior-y: contain;
+  overflow-y: auto;
 }
 
 .mobile__close {
