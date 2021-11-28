@@ -17,7 +17,9 @@ const e={openModalBtn:document.querySelectorAll("[data-modal-open]"),closeModalB
 function t(t,e=20,o=!0){var i;return function(){var n=this,c=arguments,l=o&&!i;clearTimeout(i),i=setTimeout(function(){i=null,o||t.apply(n,c)},e),l&&t.apply(n,c)}}const e=document.querySelectorAll(".slide-in");function o(){e.forEach(t=>{const e=window.scrollY+window.innerHeight-t.height/2,o=t.offsetTop+t.height,i=e>t.offsetTop,n=window.scrollY<o;i&&n?t.classList.add("active"):t.classList.remove("active")})}window.addEventListener("scroll",t(o));
 },{}],"iK2D":[function(require,module,exports) {
 const n={navLink:document.querySelector(".nav__dropdown"),dropdown:document.querySelector(".dropdown__wrapper")};function e(e){n.dropdown.classList.add("dropdown-is-open")}function o(){n.dropdown.classList.remove("dropdown-is-open")}n.navLink.addEventListener("mouseenter",e),n.navLink.addEventListener("focusin",e),n.navLink.addEventListener("mouseleave",o),n.navLink.addEventListener("focusout",o);
+},{}],"GW72":[function(require,module,exports) {
+const e=document.querySelector(".button-switch__toggle"),t=document.querySelector(".offers-title");e.addEventListener("change",async o=>{const{top:n}=t.getBoundingClientRect();window.scrollBy({top:n,behavior:"smooth"}),setTimeout(()=>{e.checked=!1},2e3),console.log(t.getBoundingClientRect())});
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./js/_swiper"),require("./sass/main.scss"),require("./js/_mobile-menu"),require("./js/_slick"),require("./js/_modal"),require("./js/_offers-slide"),require("./js/_header");
-},{"./js/_swiper":"v2AR","./sass/main.scss":"clu1","./js/_mobile-menu":"LjZb","./js/_slick":"TA0N","./js/_modal":"lEe3","./js/_offers-slide":"XRtd","./js/_header":"iK2D"}]},{},["Focm"], null)
-//# sourceMappingURL=/Alira-Trans/src.6c281e96.js.map
+"use strict";require("./js/_swiper"),require("./sass/main.scss"),require("./js/_mobile-menu"),require("./js/_slick"),require("./js/_modal"),require("./js/_offers-slide"),require("./js/_header"),require("./js/_hero");
+},{"./js/_swiper":"v2AR","./sass/main.scss":"clu1","./js/_mobile-menu":"LjZb","./js/_slick":"TA0N","./js/_modal":"lEe3","./js/_offers-slide":"XRtd","./js/_header":"iK2D","./js/_hero":"GW72"}]},{},["Focm"], null)
+//# sourceMappingURL=/Alira-Trans/src.b3107dea.js.map
